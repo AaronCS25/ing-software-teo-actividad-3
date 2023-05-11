@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Producto</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f0f0f0;
+        height: 100vh;
+        margin: 0;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      #img {
+        width: 100%;
+        max-width: 300px;
+        height: 200px;
+        object-fit: cover;
+        margin-bottom: 20px;
+      }
+
+      button {
+        display: inline-block;
+        padding: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #ffffff;
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+        margin-right: 10px;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      #quantity {
+        width: 60px;
+        text-align: center;
+        margin: 0 10px;
+      }
+
+      .product-controls {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .quantity-controls {
+        display: flex;
+        align-items: center;
+      }
+    </style>
+
+  </head>
+  <body>
+    <h1 id="title"></h1>
+    <img id="img">
+    <p id="price"></p>
+    <p id="stock"></p>
+    <div>
+      <button id="decrease-button">-</button>
+      <input name="quantity" id="quantity" type="number" value="0">
+      <button id="increase-button">+</button>
+    </div>
+    <button id="carro" onclick="window.location.href='cart.html'">Ver carro</button>
+    <button id="back-button">Back</button>
+    <button id="logout-button">Logout</button>
+
+    <script type="module" src="producto.js"></script>
+  </body>
+</html>

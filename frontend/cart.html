@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Cart</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f0f0f0;
+        height: 100vh;
+        margin: 0;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      img {
+        width: 100%;
+        max-width: 100px;
+        height: 100px;
+        object-fit: cover;
+        margin-right: 20px;
+      }
+
+      button {
+        display: inline-block;
+        padding: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #ffffff;
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+        margin-right: 10px;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      #cart-list {
+        list-style: none;
+        padding: 0;
+      }
+
+      #quantity {
+        width: 60px;
+        text-align: center;
+        margin: 0 10px;
+      }
+
+      .quantity-controls {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        width: 80%;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <h1>Cart</h1>
+    <ul id="cart-list"></ul>
+    <p id="total-price"></p>
+    <button id="pay-button">Pay</button>
+
+    <button id="back-button">Back</button>
+    <button id="logout-button">Logout</button>
+    
+    <script type="module" src="cart.js"></script>
+  </body>
+</html>
