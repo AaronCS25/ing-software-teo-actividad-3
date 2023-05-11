@@ -67,6 +67,9 @@ backButton.addEventListener('click', () => {
     quantityInput.addEventListener('input', () => {
         if (quantityInput.value == '' || quantityInput.value == null || quantityInput.value == undefined) {
             quantityInput.value = 0;
+            if (cart[productId].quantity == 0) {
+		    delete cart[productId];
+	    } 
         } else
         if (quantityInput.value < 0) {
             quantityInput.value = 0;
