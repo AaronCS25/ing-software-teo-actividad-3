@@ -1,4 +1,4 @@
-import { apiUrl, isLoggedInKey } from './config.js';
+import { apiUrl, isLoggedInKey, userEmailKey } from './config.js';
 
 const isLoggedIn = JSON.parse(localStorage.getItem(isLoggedInKey));
 if (isLoggedIn == null || isLoggedIn != true) {

@@ -1,0 +1,18 @@
+{
+  "name": "api-ingsoft",
+  "version": "1.0.0",
+  "description": "gaaa",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongoose": "^5.11.15",
+    "nodemon": "^2.0.20"
+  }
+}

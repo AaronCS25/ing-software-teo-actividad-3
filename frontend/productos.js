@@ -30,8 +30,8 @@ fetch(`${apiUrl}/items`)
       details.textContent = `Price: ${item.price}, Stock: ${item.stock}`;
 
       const img = document.createElement('img');
-      //img.src = item.img_path;
-      img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9rR1G1N5pWk-480uuxVMR27caDVqEuFsa7-PcyyuzXGhNn5SBoSKp4xxTamlAfMd_pSc&usqp=CAU";
+      img.src = item.img_path;
+      //img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9rR1G1N5pWk-480uuxVMR27caDVqEuFsa7-PcyyuzXGhNn5SBoSKp4xxTamlAfMd_pSc&usqp=CAU";
       img.alt = item.name;
 
       console.log('aquí >:D')
