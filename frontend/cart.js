@@ -111,7 +111,7 @@ for (const productId in cart) {
     });
 
 
-    img.src = product.img_path;
+    img.src =  apiUrl + '/' + product.img_path;
     name.textContent = `Name: ${product.name}`;
     price.textContent = `Price: ${product.price}`;
     stock.textContent = `Stock: ${product.stock}`;
