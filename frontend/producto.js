@@ -51,7 +51,6 @@ backButton.addEventListener('click', () => {
             }
             localStorage.setItem('cart', JSON.stringify(cart));
         }
-        console.log(cart)
     });
 
     increaseButton.addEventListener('click', () => {   
@@ -61,15 +60,11 @@ backButton.addEventListener('click', () => {
             cart[productId] = productcart;
             localStorage.setItem('cart', JSON.stringify(cart)); 
         }
-        console.log(cart)
     });
 
     quantityInput.addEventListener('input', () => {
         if (quantityInput.value == '' || quantityInput.value == null || quantityInput.value == undefined) {
             quantityInput.value = 0;
-            if (cart[productId].quantity == 0) {
-		    delete cart[productId];
-	    } 
         } else
         if (quantityInput.value < 0) {
             quantityInput.value = 0;
@@ -83,7 +78,7 @@ backButton.addEventListener('click', () => {
          if (cart[productId].quantity == 0) {
             delete cart[productId];
         } 
-        console.log(cart)
+        localStorage.setItem('cart', JSON.stringify(cart));
     }
 );
   })
