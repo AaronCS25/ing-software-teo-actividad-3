@@ -25,7 +25,7 @@ backButton.addEventListener('click', () => {
   .then(response => response.json())
   .then(product => {
     document.getElementById('title').textContent = product.name;
-    document.getElementById('img').src = product.img_path;
+    document.getElementById('img').src = apiUrl + '/' + product.img_path;
     document.getElementById('price').textContent = `Price: ${product.price}`;
     document.getElementById('stock').textContent = `Stock: ${product.stock}`;
 
