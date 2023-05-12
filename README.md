@@ -1,2 +1,2 @@
 # Farmacia
-![Diagrama de clases] (diagrama.png)
+![Diagrama de clases] (/diagrama.png)
