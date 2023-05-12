@@ -21,4 +21,6 @@ https://aaroncs25.github.io/ing-software-teo-actividad-3/frontend/login.html
 
 #### Local
 
-~~~python3 -m http.server 8000~~~
+~~~ 
+python3 -m http.server 8000
+~~~
