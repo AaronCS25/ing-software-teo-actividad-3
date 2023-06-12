@@ -14,6 +14,21 @@
 
 https://replit.com/@JuaquinRemon/JudiciousBaggyBraces
 
+## Tests
+
+Instalar dependencias
+~~~ 
+pip install requests
+pip install unittest
+pip install pytest
+~~~
+
+Ubicarse en carpeta backend donde se encuentra test.py
+~~~ 
+python3 -m unittest
+~~~
+
+
 ### Frontend
 
 #### Github Pages
